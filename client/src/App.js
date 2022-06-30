@@ -4,7 +4,8 @@ import './App.css';
 import { Route, Routes} from 'react-router-dom';
 
 
-const FAQs = React.lazy(() => import("./infor-page/faqs.jsx"));
+const FAQs = React.lazy(() => import("./info-page/faqs.jsx"));
+const HomePage = React.lazy(() => import("./home-page/home-page.jsx"));
 
 
 class App extends Component {
@@ -13,8 +14,8 @@ class App extends Component {
       <React.StrictMode>
         <Suspense fallback={<div><h1>Loading...</h1></div>}>
           <Routes>
-              <Route path ="/FAQs" element={<FAQs/>}/>
-              
+              <Route path ="/" element={<HomePage/>}/>
+              <Route path ="/FAQs" element={<FAQs/>}/>             
           </Routes>
         </Suspense>
       </React.StrictMode>
