@@ -1,0 +1,41 @@
+.container {
+    width: 900px;
+    margin: 20px auto;
+}
+
+.title {
+    width: 100%;
+    color: #149696;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+}
+
+.big-catalog {
+    font-size: 22px;
+    font-weight: 700;
+    color: #149696;
+    margin: 10px 0;
+}
+
+.small-catalog {
+    font-size: 17px;
+    font-weight: 700;
+    color: #149696;
+    margin: 10px 0;
+}
+
+.text {
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.link {
+    color: #149696;
+    text-decoration: none;
+}
+
+.item {
+    margin-bottom: 10px;
+}

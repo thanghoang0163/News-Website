@@ -1,0 +1,9 @@
+.ads-text {
+    text-align: center;
+    margin: 100px 0;
+    font-size: 40px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(#ac7944, #47b165, #ce60cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
