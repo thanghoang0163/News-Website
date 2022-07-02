@@ -76,7 +76,7 @@ function CookiePolicy() {
           </ul>
         </div>
         <div className="cookie-small-catalog small-catalog">
-          Tính toàn vẹn của sản phẩm, trang web và bảo mật
+          Tính toàn vẹn của sản phẩm, trang web và bảo mật của ViniPR
         </div>
         <div className="cookie-text text">
           Chúng tôi sử dụng cookie để giúp chúng tôi giữ cho tài khoản, dữ liệu
