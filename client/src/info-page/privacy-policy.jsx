@@ -30,7 +30,7 @@ function TermOfUse() {
             </li>
             <li className="privacy-item item">
               Duyệt an toàn là một cách chúng tôi bảo vệ thông tin của bạn. Hoạt
-              động của bạn (ví dụ: đăng trạng thái hoặc gửi tin nhắn) được mã
+              động của bạn (ví dụ: đăng bài viết hoặc thiết lập trang cá nhân) được mã
               hóa, nghĩa là hoạt động được chuyển thành mã để mọi người không
               thể truy cập trái phép.
             </li>
@@ -83,12 +83,9 @@ function TermOfUse() {
             </li>
             <li className="privacy-item item">
               Dữ liệu được bảo vệ đặc biệt: Người dùng có thể chọn cung cấp
-              thông tin về quan điểm tôn giáo, quan điểm chính trị, người mà
-              Người dùng “thích” hoặc sức khỏe của Người dùng trong các trường
-              thông tin trên trang cá nhân Vinipr. Thông tin này và các thông
-              tin khác chẳng hạn như nguồn gốc dân tộc hoặc chủng tộc, niềm tin
-              triết lý hoặc tư cách thành viên trong nghiệp đoàn có thể được bảo
-              vệ đặc biệt theo luật pháp của quốc gia Người dùng
+              thông tin về sở thích, nghề nghiệp, thông tin liên lạc,... được bảo vệ 
+              tuyệt đối tránh tính trạng rò rỉ ra bên ngoài gây ảnh hưởng người dùng 
+              và phù hợp với pháp luật nhà nước hiện hành.
             </li>
             <li className="privacy-item item">
               Mạng và kết nối. Chúng tôi thu thập thông tin về những người,
@@ -111,7 +108,7 @@ function TermOfUse() {
               Người dùng tương tác; và thời gian, tần suất cũng như khoảng thời
               gian hoạt động của Người dùng. Ví dụ: Chúng tôi ghi lại thời gian
               Người dùng sử dụng và lần gần đây nhất Người dùng dùng dịch vụ của
-              chúng tôi, cũng như các bài viết, video và nội dung khác mà Người
+              chúng tôi, cũng như các bài viết, hình ảnh, âm thanh và nội dung khác mà Người
               dùng xem trên Vinipr. Chúng tôi cũng thu thập thông tin về cách
               Người dùng sử dụng các tính năng.
             </li>
@@ -266,7 +263,7 @@ function TermOfUse() {
         </div>
         <div className="privacy-big-catalog big-catalog">Về Vinipr</div>
         <div className="privacy-text text">
-          Vinipr được thiết lập bởi Công ty TNHH Vinipr Media. Bên cạnh đó, có
+          Vinipr được thiết lập bởi <b> Công ty TNHH Vinipr Media</b>. Bên cạnh đó, có
           các công ty hỗ trợ các dịch vụ liên kết như:
         </div>
         <div className="privacy-big-catalog big-catalog">
@@ -285,7 +282,7 @@ function TermOfUse() {
         </div>
         <div className="privacy-big-catalog big-catalog">
           Mọi thay đổi về nội dung của chính sách này sẽ được thông báo đến
-          Người dùng
+          Người dùng.
         </div>
         <div className="privacy-text text">
           Trước khi áp dụng nội dung thay đổi của Chính sách quyền riêng tư,
@@ -301,7 +298,7 @@ function TermOfUse() {
           trực tuyến hoặc qua thư theo địa chỉ:
         </div>
         <div style={{ fontStyle: "italic", color: "#2dbc1a" }}>
-          Công ty TNHH Vinipr Media
+         <b> Công ty TNHH Vinipr Media</b>
         </div>
         <div className="privacy-text text">
           L17-11, Tầng 17, Tòa nhà Vincom Center, 72 Lê Thánh Tôn, P. Bến Nghé,

@@ -35,7 +35,7 @@ function CookiePolicy() {
           Chúng tôi sử dụng cookie nếu bạn có tài khoản Vinipr, sử dụng Sản phẩm
           của Vinipr, bao gồm trang web và ứng dụng của chúng tôi hoặc truy cập
           các trang web và ứng dụng khác sử dụng Sản phẩm của Vinipr (bao gồm
-          nút Haha hoặc các Công nghệ khác của Vinipr). Cookie giúp Vinipr cung
+          nút nền tảng Vinipr hoặc các Công nghệ khác của Vinipr). Cookie giúp Vinipr cung
           cấp Sản phẩm của Vinipr cho bạn cũng như hiểu được thông tin mà chúng
           tôi nhận được về bạn, bao gồm thông tin về việc bạn sử dụng các trang
           web và ứng dụng khác, cho dù bạn đã đăng ký hoặc đăng nhập hay chưa
