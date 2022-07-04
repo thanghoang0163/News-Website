@@ -61,24 +61,24 @@ function RightSide() {
 
       {/* Reading Result */}
       <div className="right-side-result">
-        <div className="right-side-result__title">Kết quả của bạn hôm nay</div>
+        <div className="right-side-result__title">Thành tích hôm nay</div>
         <div className="right-side-result__total">
           <img
             src={ReadingPerson}
             className="right-side-result__total-img"
             alt=""
           />
-          Tổng số bài viết đã đọc: 100
+          Bài viết đã đọc: 100
         </div>
         <div className="right-side-result__percent">
           <img src={Brain} className="right-side-result__percent-img" alt="" />
-          Phần trăm đã sử dụng: 10%
+          Sự hiểu biết tăng: 10%
         </div>
       </div>
 
       {/* Schedule */}
       <div className="right-side-schedule-container">
-        <div className="right-side-schedule__title">Kế hoạch của bạn</div>
+        <div className="right-side-schedule__title">Lập kế hoạch</div>
         {/* <button
           className="right-side-schedule-btn"
           onClick={() => {

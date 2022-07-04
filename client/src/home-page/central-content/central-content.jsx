@@ -38,10 +38,16 @@ function CentralContent() {
           <span>#keyword&nbsp;</span>
           <span>#keyword&nbsp;</span>
           <span>#keyword&nbsp;</span>
+          <span>#keyword&nbsp;</span>
+          <span>#keyword&nbsp;</span>
+          <span>#keyword&nbsp;</span>
+          <span>#keyword&nbsp;</span>
+          <span>#keyword&nbsp;</span>
+          <span>#keyword&nbsp;</span>
         </div>
         <div className="central-content-explore__hot-authors">
           <div className="central-content-explore__hot-authors-title">
-            Tác giả hot nhất
+            Tác giả nổi bật
           </div>
           <div className="central-content-explore__hot-authors-img"></div>
           <div className="central-content-explore__hot-authors-name">
@@ -54,7 +60,7 @@ function CentralContent() {
         </div>
         <div className="central-content-explore__hot-authors">
           <div className="central-content-explore__hot-authors-title">
-            Tác giả hot nhất
+            Tác giả nổi bật
           </div>
           <div className="central-content-explore__hot-authors-img"></div>
           <div className="central-content-explore__hot-authors-name">

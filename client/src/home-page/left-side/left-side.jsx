@@ -29,13 +29,13 @@ function LeftSide() {
         <div className="left-side-nav-bar__trend-posts">
           <a className="left-side-nav-bar__trend-posts-link" href="#">
             <i className="fa-solid fa-arrow-trend-up left-side-nav-bar__trend-posts-icon side-icon"></i>
-            <span className="left-side-text">Bài viết hot</span>
+            <span className="left-side-text">Bài viết nổi bật</span>
           </a>
         </div>
         <div className="left-side-nav-bar__favorite-authors">
           <a className="left-side-nav-bar__favorite-authors-link" href="#">
             <i className="fa-solid fa-user-graduate left-side-nav-bar__favorite-authors-icon side-icon"></i>
-            <span className="left-side-text">Tác giả hot</span>
+            <span className="left-side-text">Tác giả yêu thích</span>
           </a>
         </div>
       </div>
