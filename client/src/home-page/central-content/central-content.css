@@ -1,7 +1,7 @@
 /* Container */
 .central-content-container {
     width: 72%;
-    background-image: linear-gradient(to bottom, #BBD8C3, #F3D6DA);
+    background-image: linear-gradient(to bottom, var(--gradient-green), var(--gradient-pink));
     position: absolute;
     top: 0;
     left: 11%;
@@ -66,7 +66,8 @@
     border-radius: 5px;
     padding: 20px 10px;
     margin-right: 20px;
-    width: 270px;
+    width: 250px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .central-content-explore__key-word-title {
@@ -78,6 +79,7 @@
 
 .central-content-explore__key-word span{
     font-size: 15px;
+    display: inline-block;
 }
 
 .central-content-explore__hot-authors {
@@ -93,6 +95,7 @@
     justify-content: center;
     padding: 10px 0;
     width: 350px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .central-content-explore__hot-authors-title {

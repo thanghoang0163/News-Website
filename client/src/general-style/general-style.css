@@ -1,6 +1,8 @@
 /* General */
 :root {
     --color-text: #333;
+    --gradient-green: #B5D1BD;
+    --gradient-pink: #F3D6DA;
 }
 
 .side-icon {

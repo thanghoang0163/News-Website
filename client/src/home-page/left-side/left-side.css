@@ -1,6 +1,6 @@
 /* Container */
 .left-side-container {
-    background: linear-gradient(to bottom, #B5D1BD, #F3D6DA);
+    background: linear-gradient(to bottom, var(--gradient-green), var(--gradient-pink));
     width: 10%;
     height: 100%;
     padding: 10px 10px;
