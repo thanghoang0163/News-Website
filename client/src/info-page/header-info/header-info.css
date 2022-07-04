@@ -1,8 +1,8 @@
 .header-info__menu {
     background: linear-gradient(to bottom, #DEEDE6, #EBEAD8, #DEEDE6);
-    width: 100%;
+    width: calc(100% - 60px);
     height: 130px;
-    padding: 0 60px;
+    padding: 0 0 0 60px;
 }
 
 .header-info__logo a {
@@ -17,7 +17,7 @@
 
 .header-info__navbar {
     width: 800px;
-    padding: 0 18%;
+    transform: translateX(20%)
 }
 
 .header-info__list {

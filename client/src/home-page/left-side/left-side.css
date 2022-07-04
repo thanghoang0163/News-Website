@@ -1,25 +1,13 @@
-/* General */
-:root {
-    --color-text: #333;
-}
-
-.left-side-icon {
-    margin-right: 10px;
-    font-size: 20px;
-}
-
-.left-side-text {
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--color-text);
-}
-
+/* Container */
 .left-side-container {
     background: linear-gradient(to bottom, #B5D1BD, #F3D6DA);
     width: 10%;
     height: 100%;
     padding: 10px 10px;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .left-side-logo__img {
@@ -57,6 +45,7 @@
 .left-side-profile__help,
 .left-side-profile__setting {
     margin: 20px 0;
+    font-weight: 500;
 }
 
 .left-side-nav-bar__home-link,
@@ -94,7 +83,7 @@
     content: "";
     position: absolute;
     bottom: 0;
-    left: 10px;
+    left: 11%;
     width: 110px;
     height: 3px;
     background-color: rgb(99, 96, 96);
@@ -108,42 +97,50 @@
 }
 
 .left-side-profile__title {
-    transform: translateX(-10%);
+    transform: translateX(-3%);
 }
 
-.left-side-profile__img-container {
+.left-side-profile__img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
     overflow: hidden;
-    transform: translateX(40%);
+    transform: translateX(50%);
     margin: 10px 0;
-}
-
-.left-side-profile__img {
-    width: 100%;
-    height: 100%;
+    background-image: url("../../assets/images/girl1.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .left-side-profile__name {
-    transform: translateX(7%);
     font-size: 15px;
     font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px; 
+    text-align: center;
+    width: 140px;
+    word-break: break-word;
+}
+
+.left-side-profile__personal-page-link {
+    text-decoration: none;
+    color: #6f36e0;
+    width: 100%;
 }
 
 .left-side-profile::before {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 10px;
+    left: 11%;
     width: 110px;
     height: 3px;
     background-color: rgb(99, 96, 96);
     border-radius: 10px;
 }
 
-.left-side-profile a:hover,
-.left-side-profile .left-side-text:hover {
+.left-side-profile a:hover {
     color: #149696;
 }
 

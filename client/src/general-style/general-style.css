@@ -1,5 +1,17 @@
+/* General */
 :root {
     --color-text: #333;
+}
+
+.side-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.side-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-text);
 }
 
 .container {

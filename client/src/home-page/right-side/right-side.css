@@ -1,0 +1,194 @@
+/* Container */
+.right-side-container {
+    background: linear-gradient(to bottom, #AFB592, #68F3AF);
+    width: 15%;
+    height: 100%;
+    padding: 10px 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Notify */
+.right-side-notify-container {
+    display: flex;
+    justify-content: right;
+}
+
+.right-side-notify {
+    font-size: 18px;
+    color: rgb(104, 102, 102);
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.right-side-avatar {
+    width: 60px;
+    height: 60px;
+    background-image: url("../../assets/images/girl1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+/* Reading Result */
+.right-side-result {
+    margin: 20px 0;
+}
+
+.right-side-result__title,
+.right-side-schedule__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.right-side-result__total,
+.right-side-result__percent {
+    width: 195px;
+    color: #fff;
+    font-size: 14px;
+    text-align: right;
+    background-color: rgb(8, 132, 136);
+    padding: 7px 9px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.right-side-result__total-img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: -26px;
+    left: -33px;
+}
+
+.right-side-result__percent-img {
+    position: absolute;
+    width: 60px;
+    height: 70px;
+    top: -18px;
+    left: -20px;
+}
+
+/* Schedule */
+.right-side-schedule-container {
+    margin: 30px 0;
+}
+
+.right-side-schedule__title {
+    margin-bottom: 10px;
+}
+
+.right-side-schedule-btn {
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+    background-color: #1ec5d1;
+    color: #fff;
+}
+
+.right-side-schedule-btn:hover {
+    cursor: pointer;
+    background-color: #22b7c2;
+}
+
+.right-side-schedule {
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.right-side-schedule__week-and-day {
+    width: 50%;
+}
+
+.right-side-schedule__month,
+.right-side-schedule__week,
+.right-side-schedule__day {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.right-side-schedule__month {
+    width: 50%;
+    background-color: #F4A4F2;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.right-side-schedule__week {
+    width: 100%;
+    background-color: #F6C1F5;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.right-side-schedule__day {
+    width: 100%;
+    background-color: #8EF578;
+    border-radius: 5px;
+}
+
+.right-side-schedule__month-1,
+.right-side-schedule__week-1,
+.right-side-schedule__day-1 {
+    font-size: 16px;
+}
+
+.right-side-schedule__month-2,
+.right-side-schedule__week-2,
+.right-side-schedule__day-2 {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.right-side-schedule__month-2 {
+    padding-bottom: 20px;
+}
+
+.right-side-schedule__month-1,
+.right-side-schedule__month-2 {
+    transform: translateX(20%);
+}
+
+.right-side-schedule__month span,
+.right-side-schedule__week-3,
+.right-side-schedule__week-4,
+.right-side-schedule__day-3,
+.right-side-schedule__day-4 {
+    padding: 5px 0 0 10px;
+}
+
+.right-side-schedule__week-1,
+.right-side-schedule__week-2,
+.right-side-schedule__day-1,
+.right-side-schedule__day-2 {
+    transform: translateX(30%);
+}
+
+
+
+
+
+
+
+
+

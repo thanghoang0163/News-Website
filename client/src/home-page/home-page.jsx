@@ -1,15 +1,18 @@
 import React, { Component } from "react";
 import { Route, Switch, Routes } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
+import LeftSide from "./left-side/left-side.jsx";
+import CentralContent from "./central-content/central-content.jsx";
+import RightSide from "./right-side/right-side.jsx";
 import "./home-page.css";
 
 function HomePage() {
   return (
     <React.Fragment>
-      <div>
-        <h1>
-          <a href="/left-side">Side Left</a>
-        </h1>
+      <div className="home-page">
+        <LeftSide />
+        <CentralContent />
+        <RightSide />
       </div>
     </React.Fragment>
   );
