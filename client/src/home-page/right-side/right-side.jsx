@@ -47,7 +47,7 @@ function RightSide() {
       <div className="right-side-schedule-container">
         <div className="right-side-schedule__title">Kế hoạch của bạn</div>
         <button className="right-side-schedule-btn" onClick="">
-          Cài đặt kế hoạch cho bạn
+          Cài đặt
         </button>
         <Calendar onChange={setDate} value={date} />
         <div className="right-side-schedule">
