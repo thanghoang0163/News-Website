@@ -1,23 +1,23 @@
 .header-info__menu {
     background: linear-gradient(to bottom, #DEEDE6, #EBEAD8, #DEEDE6);
-    width: 100%;
+    width: calc(100% - 60px);
     height: 130px;
-    padding: 0 60px;
+    padding: 0 0 0 60px;
 }
 
-.header-info__logo a{
+.header-info__logo a {
     font-size: 30px;
     font-weight: 800;
-	color: rgb(15, 158, 15);
+    color: rgb(15, 158, 15);
     text-decoration: none;
-    background: -webkit-linear-gradient( #8be7a5, #1c8139);
+    background: -webkit-linear-gradient(#8be7a5, #1c8139);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .header-info__navbar {
     width: 800px;
-    padding: 0 18%;
+    transform: translateX(20%)
 }
 
 .header-info__list {
@@ -39,5 +39,5 @@
 }
 
 .header-info__link:hover {
-    color: rgb(97, 179, 97);
+    color: #149696;
 }

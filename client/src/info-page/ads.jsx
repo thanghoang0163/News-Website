@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import HeaderInfo from "./general/header-info.jsx";
+import HeaderInfo from "./header-info/header-info.jsx";
 import "./ads.css";
-import "./general/general-style.css";
+import "../general-style/general-style.css";
 
 function TermOfUse() {
   return (

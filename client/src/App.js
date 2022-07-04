@@ -3,9 +3,10 @@ import './App.css';
 
 import { Route, Routes} from 'react-router-dom';
 
-
+// HomePage
 const HomePage = React.lazy(() => import("./home-page/home-page.jsx"));
-const HeaderInfo = React.lazy(() => import("./info-page/general/header-info.jsx"));
+
+// Info Pages
 const QnA = React.lazy(() => import("./info-page/qna.jsx"));
 const TermOfUse = React.lazy(() => import("./info-page/term.jsx"));
 const CookiePolicy = React.lazy(() => import("./info-page/cookie-policy.jsx"));
@@ -19,7 +20,10 @@ class App extends Component {
       <React.StrictMode>
         <Suspense fallback={<div><h1>Loading...</h1></div>}>
           <Routes>
-              <Route path ="/" element={<HeaderInfo/>}/>
+              {/* Home Page */}
+              <Route path ="/" element={<HomePage/>}/>
+
+              {/* Info Pages */}
               <Route path ="/QnA" element={<QnA/>}/>             
               <Route path ="/term" element={<TermOfUse/>}/>           
               <Route path ="/cookie-policy" element={<CookiePolicy/>}/>           

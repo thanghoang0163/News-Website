@@ -3,9 +3,9 @@ import { Route, Switch } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
-import HeaderInfo from "./general/header-info.jsx";
+import HeaderInfo from "./header-info/header-info.jsx";
 import "./cookie-policy.css";
-import "./general/general-style.css";
+import "../general-style/general-style.css";
 
 function CookiePolicy() {
   return (
