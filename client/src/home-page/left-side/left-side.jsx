@@ -89,6 +89,7 @@ function LeftSide() {
         </a>
 
         <a className="left-side-info__ads" href="/advertising">
+          {" "}
           Advertising
         </a>
         <div className="left-side-info__company">@2022 - Vinipr, Co</div>

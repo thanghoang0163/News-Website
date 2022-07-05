@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "./calendar-style.css";
-import ScheduleButton from "./schedule-button.jsx";
 
 import ReadingPerson from "../../assets/images/reading-person.png";
 import Brain from "../../assets/images/brain.png";
@@ -27,10 +26,13 @@ function RightSide() {
   const remainingDay = lastDayOfMonth - day;
 
   // Setting Form
-  const readingInput = document.querySelector("#reading-input");
-  const writingInput = document.querySelector("#writing-input");
   const [readingDay, setReadingDay] = useState(0);
   const [writingDay, setWritingDay] = useState(0);
+
+  useEffect(() => {
+    setReadingDay(localStorage.getItem("readingInput"));
+    setWritingDay(localStorage.getItem("writingInput"));
+  }, []);
 
   console.log(remainingDay);
 
@@ -84,6 +86,7 @@ function RightSide() {
                     : (readingDay * remainingDay).toString()
                 }
               ></input>
+              <label>bài</label>
             </span>
             <span className="right-side-schedule__month-4">
               <label>- Viết:</label>
@@ -96,6 +99,7 @@ function RightSide() {
                     : (writingDay * remainingDay).toString()
                 }
               ></input>
+              <label>bài</label>
             </span>
           </div>
           <div className="right-side-schedule__day">
@@ -113,16 +117,28 @@ function RightSide() {
               <input
                 type="text"
                 id="reading-input"
-                onChange={(e) => setReadingDay(parseInt(e.target.value))}
+                onChange={(e) => {
+                  localStorage.setItem(
+                    "readingInput",
+                    parseInt(e.target.value)
+                  );
+                }}
               ></input>
+              <label>bài</label>
             </span>
             <span className="right-side-schedule__day-4">
               <label htmlFor="writing-input">- Viết:</label>
               <input
                 type="text"
                 id="writing-input"
-                onChange={(e) => setWritingDay(parseInt(e.target.value))}
+                onChange={(e) => {
+                  localStorage.setItem(
+                    "writingInput",
+                    parseInt(e.target.value)
+                  );
+                }}
               ></input>
+              <label>bài</label>
             </span>
           </div>
         </div>

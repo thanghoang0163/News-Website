@@ -93,17 +93,6 @@
     position: relative;
 }
 
-.right-side-schedule-setting-title {
-    font-size: 15px;
-    font-weight: 500;
-    display: inline-block;
-    margin-bottom: 10px;
-    background: -webkit-linear-gradient(rgb(69, 70, 69), rgb(3, 3, 3));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
 .right-side-schedule {
     display: flex;
     width: 100%;
@@ -171,7 +160,7 @@
     width: 50px;
     font-size: 15px;
     color: #333;
-    margin-left: 5px;
+    margin: 0 5px;
 }
 
 .right-side-schedule__month-4,
