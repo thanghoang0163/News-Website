@@ -1,13 +1,14 @@
 /* Container */
 .right-side-container {
     background: linear-gradient(to bottom, #AFB592, #68F3AF);
-    width: 15%;
+    width: 20%;
     height: 100%;
     padding: 10px 10px;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1;
+    font-family: var();
 }
 
 /* Notify */
@@ -49,17 +50,18 @@
     font-size: 18px;
     font-weight: 700;
     color: var(--color-text);
+    margin-bottom: 15px;
 }
 
 .right-side-result__total,
 .right-side-result__percent {
-    width: 195px;
+    width: 200px;
     color: #fff;
     font-size: 14px;
     text-align: right;
     background-color: rgb(8, 132, 136);
     padding: 7px 9px;
-    margin: 15px 10px;
+    margin: 0 0 15px 10px;
     border-radius: 5px;
     position: relative;
 }
@@ -86,43 +88,6 @@
     position: relative;
 }
 
-.right-side-schedule__title {
-    margin-bottom: 10px;
-}
-
-.right-side-schedule-btn {
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 600;
-    text-align: center;
-    width: 70px;
-    padding: 5px 0;
-    background-color: #1ec5d1;
-    color: #fff;
-    position: absolute;
-    top: 0;
-    right: 1px;
-}
-
-.right-side-schedule-setting {
-    display: block;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 35px;
-    right: 0;
-    transform-origin: top right;
-    animation: Growth linear 0.15s;
-}
-
-.right-side-schedule-setting--actived {
-    display: block;
-}
-
 .right-side-schedule-setting-title {
     font-size: 15px;
     font-weight: 500;
@@ -133,45 +98,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* .right-side-schedule-setting::before {
-    content: "";
-    border: 15px solid;
-    border-color: transparent transparent #fff transparent;
-    position: absolute;
-    top: -28px;
-    right: 10px;
-
-} */
-
-.right-side-schedule-setting label {
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.right-side-schedule-setting input {
-    width: 100px;
-    margin: 0 10px 10px;
-    outline: none;
-}
-
-.right-side-schedule-setting-btn {
-    border: none;
-    font-size: 15px;
-    font-weight: 600;
-    background-color: #3ed4df;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.right-side-schedule-setting-btn:hover {
-    background-color: #27c9d4;
-}
-
-.right-side-schedule-btn:hover {
-    cursor: pointer;
-    background-color: #22b7c2;
-}
 
 .right-side-schedule {
     display: flex;
@@ -179,12 +105,7 @@
     margin: 10px 0;
 }
 
-.right-side-schedule__week-and-day {
-    width: 50%;
-}
-
 .right-side-schedule__month,
-.right-side-schedule__week,
 .right-side-schedule__day {
     display: flex;
     flex-direction: column;
@@ -200,63 +121,40 @@
     margin-right: 5px;
 }
 
-.right-side-schedule__week {
-    width: 100%;
-    background-color: #F6C1F5;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
 
 .right-side-schedule__day {
-    width: 100%;
+    width: 50%;
     background-color: #8EF578;
     border-radius: 5px;
 }
 
 .right-side-schedule__month-1,
-.right-side-schedule__week-1,
 .right-side-schedule__day-1 {
     font-size: 16px;
 }
 
 .right-side-schedule__month-2,
-.right-side-schedule__week-2,
 .right-side-schedule__day-2 {
     font-style: italic;
     font-weight: 400;
 }
 
-.right-side-schedule__month-2 {
-    padding-bottom: 20px;
-}
-
 .right-side-schedule__month-1,
 .right-side-schedule__month-2 {
-    transform: translateX(20%);
-}
-
-.right-side-schedule__month span,
-.right-side-schedule__week-3,
-.right-side-schedule__week-4,
-.right-side-schedule__day-3,
-.right-side-schedule__day-4 {
-    padding: 5px 0 0 10px;
+    transform: translateX(25%);
 }
 
 .right-side-schedule__month-3,
 .right-side-schedule__month-4,
-.right-side-schedule__week-3,
-.right-side-schedule__week-4,
 .right-side-schedule__day-3,
 .right-side-schedule__day-4 {
     display: flex;
     align-items: center;
+    padding: 5px 0 0 10px;
 }
 
 .right-side-schedule__month-3 input,
 .right-side-schedule__month-4 input,
-.right-side-schedule__week-3 input,
-.right-side-schedule__week-4 input,
 .right-side-schedule__day-3 input,
 .right-side-schedule__day-4 input {
     border: none;
@@ -265,28 +163,19 @@
     width: 50px;
     font-size: 15px;
     color: #333;
+    margin-left: 5px;
 }
 
-.right-side-schedule__week-1,
-.right-side-schedule__week-2,
 .right-side-schedule__day-1,
 .right-side-schedule__day-2 {
     transform: translateX(30%);
 }
 
-.right-side-schedule__week-4,
+.right-side-schedule__month-4,
 .right-side-schedule__day-4 {
  padding-bottom: 5px;
 }
 
-@keyframes Growth {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
-}
 
 
 

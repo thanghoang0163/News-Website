@@ -17,29 +17,6 @@ function LeftSide() {
         </a>
       </div>
 
-      {/* Nav Bar */}
-      <div className="left-side-nav-bar">
-        <div className="left-side-nav-bar__title">ĐIỀU HƯỚNG</div>
-        <div className="left-side-nav-bar__home">
-          <a className="left-side-nav-bar__home-link" href="#">
-            <i className="fa-solid fa-house-chimney-window left-side-nav-bar__home-icon side-icon"></i>
-            <span className="left-side-text">Trang chủ</span>
-          </a>
-        </div>
-        <div className="left-side-nav-bar__trend-posts">
-          <a className="left-side-nav-bar__trend-posts-link" href="#">
-            <i className="fa-solid fa-arrow-trend-up left-side-nav-bar__trend-posts-icon side-icon"></i>
-            <span className="left-side-text">Bài viết hot</span>
-          </a>
-        </div>
-        <div className="left-side-nav-bar__favorite-authors">
-          <a className="left-side-nav-bar__favorite-authors-link" href="#">
-            <i className="fa-solid fa-user-graduate left-side-nav-bar__favorite-authors-icon side-icon"></i>
-            <span className="left-side-text">Tác giả hot</span>
-          </a>
-        </div>
-      </div>
-
       {/* Profile */}
       <div className="left-side-profile">
         <div className="left-side-profile__title">HỒ SƠ</div>
