@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "./calendar-style.css";
-import ScheduleButton from "./schedule-button.jsx";
 
 import ReadingPerson from "../../assets/images/reading-person.png";
 import Brain from "../../assets/images/brain.png";
@@ -16,46 +15,34 @@ function RightSide() {
   // Calendar
   const [date, setDate] = useState(new Date());
 
+  const lastDayOfMonth = new Date(
+    date.getFullYear(),
+    date.getMonth() + 1,
+    0
+  ).getDate();
   const day = date.getDate();
   const month = date.getMonth() + 1;
   const year = date.getFullYear();
+  const remainingDay = lastDayOfMonth - day;
+
   // Setting Form
-  const readingInput = document.querySelector("#reading-input");
-  const writingInput = document.querySelector("#writing-input");
   const [readingDay, setReadingDay] = useState(0);
   const [writingDay, setWritingDay] = useState(0);
-  const [readingWeek, setReadingWeek] = useState(0);
-  const [writingWeek, setWritingWeek] = useState(0);
-  const [readingMonth, setReadingMonth] = useState();
-  const [writingMonth, setWritingMonth] = useState(0);
-  const settingTable = document.querySelector(".right-side-schedule-setting");
-
-  const handleOpening = () => {
-    if (settingTable) {
-      settingTable.classList.add("right-side-schedule-setting--actived");
-    }
-  };
-
-  const handleClosing = () => {
-    if (settingTable) {
-      settingTable.classList.remove("right-side-schedule-setting--actived");
-    }
-  };
 
   useEffect(() => {
-    handleOpening();
-    handleClosing();
+    setReadingDay(localStorage.getItem("readingInput"));
+    setWritingDay(localStorage.getItem("writingInput"));
   }, []);
 
-  console.log(day);
+  console.log(remainingDay);
 
   return (
     <div className="right-side-container">
       {/* Notify */}
       <div className="right-side-notify-container">
-        <div className="right-side-notify">
+        <button className="right-side-notify">
           <i className="fa-solid fa-bell"></i>
-        </div>
+        </button>
         <div className="right-side-avatar"></div>
       </div>
 
@@ -122,48 +109,77 @@ function RightSide() {
         <Calendar onChange={setDate} value={date} />
         <div className="right-side-schedule">
           <div className="right-side-schedule__month">
-            <span className="right-side-schedule__month-1">Tháng</span>
-            <span className="right-side-schedule__month-2">
-              {(month < 9 ? "0" + month : month) + "/" + year}
-            </span>
-            <span className="right-side-schedule__month-3">
-              <label htmlFor="reading-input">- Đọc:</label>
-              <input type="text" id="reading-input"></input>
-            </span>
-            <span className="right-side-schedule__month-4">
-              <label htmlFor="writing-input">- Viết:</label>
-              <input type="text" id="writing-input"></input>
-            </span>
-          </div>
-          <div className="right-side-schedule__week-and-day">
-            <div className="right-side-schedule__week">
-              <span className="right-side-schedule__week-1">Tuần</span>
-              <span className="right-side-schedule__week-2">01 - 07</span>
-              <span className="right-side-schedule__week-3">
-                <label>- Đọc:</label>
-                <input type="text" disabled></input>
-              </span>
-              <span className="right-side-schedule__week-4">
-                <label>- Viết:</label>
-                <input type="text" disabled></input>
+            <div className="right-side-schedule__month-title">
+              <span className="right-side-schedule__month-1">Tháng</span>
+              <span className="right-side-schedule__month-2">
+                {(month < 9 ? "0" + month : month) + "/" + year}
               </span>
             </div>
-            <div className="right-side-schedule__day">
+            <span className="right-side-schedule__month-3">
+              <label>- Đọc:</label>
+              <input
+                type="text"
+                disabled
+                value={
+                  isNaN(readingDay)
+                    ? "0"
+                    : (readingDay * remainingDay).toString()
+                }
+              ></input>
+              <label>bài</label>
+            </span>
+            <span className="right-side-schedule__month-4">
+              <label>- Viết:</label>
+              <input
+                type="text"
+                disabled
+                value={
+                  isNaN(writingDay)
+                    ? "0"
+                    : (writingDay * remainingDay).toString()
+                }
+              ></input>
+              <label>bài</label>
+            </span>
+          </div>
+          <div className="right-side-schedule__day">
+            <div className="right-side-schedule__day-title">
               <span className="right-side-schedule__day-1">Ngày</span>
               <span className="right-side-schedule__day-2">
                 {(day < 9 ? "0" + day : day) +
                   "/" +
                   (month < 9 ? "0" + month : month)}
               </span>
-              <span className="right-side-schedule__day-3">
-                <label>- Đọc:</label>
-                <input type="text" disabled></input>
-              </span>
-              <span className="right-side-schedule__day-4">
-                <label>- Viết:</label>
-                <input type="text" disabled></input>
-              </span>
             </div>
+
+            <span className="right-side-schedule__day-3">
+              <label htmlFor="reading-input">- Đọc:</label>
+              <input
+                type="text"
+                id="reading-input"
+                onChange={(e) => {
+                  localStorage.setItem(
+                    "readingInput",
+                    parseInt(e.target.value)
+                  );
+                }}
+              ></input>
+              <label>bài</label>
+            </span>
+            <span className="right-side-schedule__day-4">
+              <label htmlFor="writing-input">- Viết:</label>
+              <input
+                type="text"
+                id="writing-input"
+                onChange={(e) => {
+                  localStorage.setItem(
+                    "writingInput",
+                    parseInt(e.target.value)
+                  );
+                }}
+              ></input>
+              <label>bài</label>
+            </span>
           </div>
         </div>
       </div>
