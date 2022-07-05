@@ -16,18 +16,23 @@ function RightSide() {
   // Calendar
   const [date, setDate] = useState(new Date());
 
+  const lastDayOfMonth = new Date(
+    date.getFullYear(),
+    date.getMonth() + 1,
+    0
+  ).getDate();
   const day = date.getDate();
   const month = date.getMonth() + 1;
   const year = date.getFullYear();
+  const remainingDay = lastDayOfMonth - day;
+
   // Setting Form
   const readingInput = document.querySelector("#reading-input");
   const writingInput = document.querySelector("#writing-input");
   const [readingDay, setReadingDay] = useState(0);
   const [writingDay, setWritingDay] = useState(0);
-  const [readingMonth, setReadingMonth] = useState();
-  const [writingMonth, setWritingMonth] = useState(0);
 
-  console.log(day);
+  console.log(remainingDay);
 
   return (
     <div className="right-side-container">
@@ -70,11 +75,27 @@ function RightSide() {
             </div>
             <span className="right-side-schedule__month-3">
               <label>- Đọc:</label>
-              <input type="text" disabled></input>
+              <input
+                type="text"
+                disabled
+                value={
+                  isNaN(readingDay)
+                    ? "0"
+                    : (readingDay * remainingDay).toString()
+                }
+              ></input>
             </span>
             <span className="right-side-schedule__month-4">
               <label>- Viết:</label>
-              <input type="text" disabled></input>
+              <input
+                type="text"
+                disabled
+                value={
+                  isNaN(writingDay)
+                    ? "0"
+                    : (writingDay * remainingDay).toString()
+                }
+              ></input>
             </span>
           </div>
           <div className="right-side-schedule__day">
@@ -89,11 +110,19 @@ function RightSide() {
 
             <span className="right-side-schedule__day-3">
               <label htmlFor="reading-input">- Đọc:</label>
-              <input type="text" id="reading-input"></input>
+              <input
+                type="text"
+                id="reading-input"
+                onChange={(e) => setReadingDay(parseInt(e.target.value))}
+              ></input>
             </span>
             <span className="right-side-schedule__day-4">
               <label htmlFor="writing-input">- Viết:</label>
-              <input type="text" id="writing-input"></input>
+              <input
+                type="text"
+                id="writing-input"
+                onChange={(e) => setWritingDay(parseInt(e.target.value))}
+              ></input>
             </span>
           </div>
         </div>
