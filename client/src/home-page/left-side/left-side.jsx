@@ -19,14 +19,14 @@ function LeftSide() {
 
       {/* Profile */}
       <div className="left-side-profile">
-        <div className="left-side-profile__title">HỒ SƠ</div>
-        <div className="left-side-profile__img">
-          {/* <img src={Girl1} className="left-side-profile__img" alt="" /> */}
-        </div>
-        <div className="left-side-profile__name">
-          <a href="#" className="left-side-profile__personal-page-link">
-            Nguyễn Thị A
-          </a>
+        <div className="left-side-profile__children">
+          <div className="left-side-profile__title">HỒ SƠ</div>
+          <div className="left-side-profile__img"></div>
+          <div className="left-side-profile__name">
+            <a href="#" className="left-side-profile__personal-page-link">
+              Nguyễn Thị A
+            </a>
+          </div>
         </div>
 
         <div className="left-side-profile__post">

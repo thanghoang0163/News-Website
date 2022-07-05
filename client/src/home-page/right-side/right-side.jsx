@@ -33,9 +33,9 @@ function RightSide() {
     <div className="right-side-container">
       {/* Notify */}
       <div className="right-side-notify-container">
-        <div className="right-side-notify">
+        <button className="right-side-notify">
           <i className="fa-solid fa-bell"></i>
-        </div>
+        </button>
         <div className="right-side-avatar"></div>
       </div>
 
@@ -62,10 +62,12 @@ function RightSide() {
         <Calendar onChange={setDate} value={date} />
         <div className="right-side-schedule">
           <div className="right-side-schedule__month">
-            <span className="right-side-schedule__month-1">Tháng</span>
-            <span className="right-side-schedule__month-2">
-              {(month < 9 ? "0" + month : month) + "/" + year}
-            </span>
+            <div className="right-side-schedule__month-title">
+              <span className="right-side-schedule__month-1">Tháng</span>
+              <span className="right-side-schedule__month-2">
+                {(month < 9 ? "0" + month : month) + "/" + year}
+              </span>
+            </div>
             <span className="right-side-schedule__month-3">
               <label>- Đọc:</label>
               <input type="text" disabled></input>
@@ -76,12 +78,15 @@ function RightSide() {
             </span>
           </div>
           <div className="right-side-schedule__day">
-            <span className="right-side-schedule__day-1">Ngày</span>
-            <span className="right-side-schedule__day-2">
-              {(day < 9 ? "0" + day : day) +
-                "/" +
-                (month < 9 ? "0" + month : month)}
-            </span>
+            <div className="right-side-schedule__day-title">
+              <span className="right-side-schedule__day-1">Ngày</span>
+              <span className="right-side-schedule__day-2">
+                {(day < 9 ? "0" + day : day) +
+                  "/" +
+                  (month < 9 ? "0" + month : month)}
+              </span>
+            </div>
+
             <span className="right-side-schedule__day-3">
               <label htmlFor="reading-input">- Đọc:</label>
               <input type="text" id="reading-input"></input>

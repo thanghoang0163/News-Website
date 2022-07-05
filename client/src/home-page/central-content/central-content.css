@@ -181,7 +181,7 @@
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    width: 100px;
+    width: 110px;
     position: absolute;
     top: 5px;
     left: 5px;
@@ -210,6 +210,18 @@
 .central-content-explore__hot-authors-views i{
     font-size: 14px;
     margin-right: 5px;
+}
+
+.central-content-explore__hot-authors-rank {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#17bed4, rgb(238, 238, 153), #e2789b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Main Content */

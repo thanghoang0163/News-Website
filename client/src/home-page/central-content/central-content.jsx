@@ -67,7 +67,7 @@ function CentralContent() {
         </div>
         <div className="central-content-explore__hot-authors">
           <div className="central-content-explore__hot-authors-title">
-            Tác giả hot nhất
+            Tác giả hot tháng
           </div>
           <div className="central-content-explore__hot-authors-img"></div>
           <div className="central-content-explore__hot-authors-name">
@@ -77,10 +77,11 @@ function CentralContent() {
             <i className="fa-solid fa-eye"></i>
             <span>10.000 lượt xem</span>
           </div>
+          <div className="central-content-explore__hot-authors-rank">Top 1</div>
         </div>
         <div className="central-content-explore__hot-authors">
           <div className="central-content-explore__hot-authors-title">
-            Tác giả hot nhất
+            Tác giả hot tháng
           </div>
           <div className="central-content-explore__hot-authors-img"></div>
           <div className="central-content-explore__hot-authors-name">
@@ -90,6 +91,7 @@ function CentralContent() {
             <i className="fa-solid fa-eye"></i>
             <span>10.000 lượt xem</span>
           </div>
+          <div className="central-content-explore__hot-authors-rank">Top 2</div>
         </div>
       </div>
 
